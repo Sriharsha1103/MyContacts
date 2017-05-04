@@ -4,77 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+        android:orientation="vertical"
     tools:context="com.vvit.ammu.mycontacts.AddContactActivity">
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_contact_name"
-        android:id="@+id/id_contact_name"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:inputType="textPersonName"/>
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
 
-    <EditText
+        <EditText
+            android:id="@+id/id_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/enter_contact_name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_mobile_number"
-        android:id="@+id/id_contact_mobile"
-        android:inputType="phone"
-        android:maxLength="10"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/id_contact_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/enter_mobile_number"
+            android:inputType="phone"
+            android:maxLength="10" />
+    </android.support.design.widget.TextInputLayout>
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:id="@+id/id_contact_save"
-        android:text="@string/save_contact"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/show_contact"
-        android:id="@+id/id_contact_show"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_gravity="center"
-        />
+        android:text="@string/save_contact" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/id_name_show"
-        android:text="@string/name"
-        android:textSize="18sp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/id_mobile_show"
-        android:text="@string/mobile_number"
-        android:textSize="18sp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Contact"
-        android:id="@+id/id_next_contact_show"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_gravity="center"
-        />
+
 </LinearLayout>
